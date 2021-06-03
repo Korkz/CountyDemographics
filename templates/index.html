@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html> 
+  <head> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"><label for="states">Pick a State:</label>
   </head>
   <body>
-    <select name="states" id="states">
-      <option value="{{ state }}">{{ state }}</option>
-    </select>
-  </body>
-</html>
+    
+    <form action="/response">
+      <label for="state">Choose a state:</label>
+      <select name="state" id="state">
+        {{options}}
+      </select>
+      <input type = "submit" value = "Go!">
+    </form>
+    
+    </body>
+</html> 
