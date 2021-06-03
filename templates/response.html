@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><label for="states">Pick a State:</label>
+  </head>
+  </head>
+  <body>
+   <form action="/response">
+      <label for="state">Choose a state:</label>
+      <select name="state" id="state">
+        {{options}}
+      </select>
+      <input type = "submit" value = "Go!" onchange="this.form.submit();">
+    </form>
+    
+    <p>{{funFact}}</p>
+    
+    </body>
+</html>
